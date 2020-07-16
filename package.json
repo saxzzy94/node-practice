@@ -1,19 +1,23 @@
 {
-  "name": "weather-app-node",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "author": "kelvin",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "hbs": "^4.1.1",
-    "request": "^2.73.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
-  }
+	"name": "weather-app-node",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"engines": {
+		"node": "12.14.0",
+		"npm": "6.13.4"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"nodemon": "nodemon index.js"
+	},
+	"author": "kelvin",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"request": "^2.73.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.3"
+	}
 }
