@@ -4,6 +4,7 @@ const passport = require("passport");
 const cookieSession = require("cookie-session");
 require("./services/passport");
 const keys = require("./config/keys");
+const cors = require("cors");
 
 mongoose
 	.connect(keys.mongoURI, {
@@ -16,6 +17,7 @@ mongoose
 	.catch(err => console.log(err));
 
 const app = express();
+app.use(cors());
 
 app.use(
 	cookieSession({
